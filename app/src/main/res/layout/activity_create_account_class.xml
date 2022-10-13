@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:capitalize="words"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/Fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:hint="Full Name: " />
+
+    <EditText
+        android:id="@+id/emailChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Fullname"
+        android:layout_marginTop="50dp"
+        android:hint="E-Mail:" />
+
+    <EditText
+        android:id="@+id/updatedPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailChange"
+        android:layout_marginTop="50dp"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/ConfirmNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatedPass"
+        android:layout_marginTop="50dp"
+        android:hint="Retype Password" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ConfirmNewPass"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#C8A2C8"
+        android:text="Register"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Existing user! Go to Sign in page"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#C8A2C8"
+        android:layout_below="@+id/btnsignup"/>
+
+</RelativeLayout>

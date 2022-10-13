@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/medicationDosage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/medicationName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/imageView"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Dosage Amount"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/medicationPic"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Person Name"
+        android:src="@drawable/ic_baseline_question_mark_24" />
+
+    <ImageView
+        android:id="@+id/medicationPic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="Person Name"
+        android:src="@drawable/ic_baseline_medication_24" />
+
+    <EditText
+        android:id="@+id/medicationName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/medicationPic"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Medication Name"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_below="@id/medicationDosage"
+        android:layout_marginTop="41dp"
+        android:backgroundTint="@color/purple_200"
+        android:foregroundGravity="center_horizontal"
+
+        android:timePickerMode="spinner" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker1"
+        android:layout_marginTop="-20dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/timePicker1"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="192dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/timePicker1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="191dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicationDosage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:text="Time to take Medication: "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-25dp"
+        android:text="Date to take Medication: "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

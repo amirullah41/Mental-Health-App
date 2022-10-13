@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePage">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/purple_200"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginBottom="104dp">
+
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="204dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="logOut"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/aboutUs"
+            android:layout_width="204dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="aboutUs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.824" />
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="204dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="help"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.664" />
+
+        <Button
+            android:id="@+id/Customise"
+            android:layout_width="204dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Customise"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507" />
+
+        <Button
+            android:id="@+id/ffDetails"
+            android:layout_width="204dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Friends and Family"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.342" />
+
+        <Button
+            android:id="@+id/editAccount"
+            android:layout_width="204dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.192" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
